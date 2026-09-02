@@ -1,0 +1,40 @@
+{
+  "name": "dsh-reminder",
+  "version": "0.1.0",
+  "description": "对话式定时提醒 · Conversational Reminders：对 AI 说「20分钟后提醒我喝水」，到点浏览器弹窗通知，跨重启持久化",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "cordis",
+    "plugin",
+    "reminder",
+    "pomodoro",
+    "notification",
+    "todo"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUNG26815/dsh-reminder.git"
+  }
+}
