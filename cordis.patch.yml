@@ -1,0 +1,4 @@
+# dsh-reminder bundle patch: mounts the plugin row into the web profile roster.
+- insert:
+    - id: dsh-reminder
+      name: dsh-reminder
